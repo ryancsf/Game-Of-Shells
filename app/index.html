@@ -53,47 +53,52 @@
     <div class="jumbotron">
         <div class="container text-center">
             <h1>Game of Shells</h1>
-            <p>The Game of Shells (also known as “The Shell Game”, “Thimblerig”, and “Three Shells and a Pea”) involves a flat surface, a row of three small containers and a ball small enough to fit underneath each of them.</p>
-
-            <p>On each turn of the game the player is shown the ball being placed under one of the containers before the order of the containers is repeatedly shuffled at random.</p>
-
-            <p>The player then has to guess correctly which container the ball is under in order to win, otherwise they lose.</p>
-
-            <div class="btn-group">
-                <a href="#" class="btn btn-lg btn-warning">Step 1</a>
-                <a href="#" class="btn btn-lg btn-default">Step 2</a>
-                <a href="#" class="btn btn-lg btn-warning">Step 3</a>
-            </div>
+            <p>Inspired by <a href="http://jamiemason.github.io/front-end-engineer-interview-exercise/">this link</a></p>
         </div>
     </div>
 
     <div class="container" id="step1">
+        <div class="page-header text-center">
+            <h1><strong>Understanding</strong> the Game</h1>
+        </div>
         <section>
             <div class="row">
                 <div class="col-lg-4">
                     <h3 class="text-center">Step 1</h3>
                     <blockquote cite="http://">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <footer>-By John Doe</footer>
+                        <p>The Game of Shells (also known as “The Shell Game”, “Thimblerig”, and “Three Shells and a Pea”) involves a flat surface, a row of three small containers and a ball small enough to fit underneath each of them.</p>
                     </blockquote>
                 </div>
 
                 <div class="col-lg-4">
                     <h3 class="text-center">Step 2</h3>
                     <blockquote cite="http://">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <footer>-By John Doe</footer>
+                        <p>On each turn of the game the player is shown the ball being placed under one of the containers before the order of the containers is repeatedly shuffled at random.</p>
                     </blockquote>
                 </div>
 
                 <div class="col-lg-4">
                     <h3 class="text-center">Step 3</h3>
                     <blockquote cite="http://">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <footer>-By John Doe</footer>
+                        <p>The player then has to guess correctly which container the ball is under in order to win, otherwise they lose.</p>
                     </blockquote>
                 </div>
             </div>
+        </section>
+    </div>
+    <div class="container" id="step2">
+        <div class="page-header text-center">
+            <h1><strong>Playing</strong> the Game</h1>
+            <button type="button" name="play" class="btn btn-warning btn-lg" onclick="play()"><span class="glyphicon glyphicon-play"></span> Play</button>
+        </div>
+        <section>
+            <div class="row" id="game-container">
+                <div class="square one"></div>
+                <div class="square two"></div>
+                <div class="square three"></div>
+                <div class="ball"></div>
+            </div>
+            <hr>
         </section>
     </div>
 
@@ -124,7 +129,8 @@
         <section>
             <div class="page-header" id="gallery">
                 <h2>
-                    Gallery<small>Check Out Awesome Gallery</small>
+                    Gallery
+                    <br><small>Check Out Awesome Gallery</small>
                 </h2>
             </div>
 

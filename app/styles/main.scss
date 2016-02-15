@@ -91,3 +91,30 @@ body {
     border-bottom: 0;
   }
 }
+
+// Game of Shells Styling
+.square { cursor:pointer; }
+.ball, .square {
+    height: 100px;
+    width: 100px;
+    background: green;
+    float: left;
+    border-radius: 5px;
+    position: absolute;
+    z-index:2;
+}
+.one { left:0 }
+.two { left:100px }
+.three { left:200px }
+.ball {
+    border-radius: 100px;
+    background: red;
+    float: none;
+    clear: both;
+    z-index:-1;
+    top: 200px;
+}
+
+#game-container{
+    position:relative;
+}
