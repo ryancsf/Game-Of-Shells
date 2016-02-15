@@ -49,6 +49,10 @@ body {
   margin: 30px 0;
 }
 
+#step1,#step2,#step3{
+    padding-top: 30px;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -70,7 +74,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    // max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -90,4 +94,38 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+// Game of Shells Styling
+.square { cursor:pointer;text-align:left; }
+.ball, .square {
+    height: 100px;
+    width: 100px;
+    background: #69D2E7;
+    float: left;
+    border-radius: 5px;
+    position: absolute;
+    z-index:2;
+}
+.one { left:0;}
+.two { left:200px }
+.three { left:400px }
+.ball {
+    border-radius: 100px;
+    background: red;
+    float: none;
+    clear: both;
+    z-index:-1;
+    top: 200px;
+}
+
+#game-container{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    margin:auto;
+}
+
+#instructions{
+    font-size: 18px;
 }
