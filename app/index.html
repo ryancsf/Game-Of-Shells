@@ -40,11 +40,11 @@
             </div> <!-- Navbar Heder -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#step1">Step 1</a></li>
-                    <li><a href="#step2">Step 2</a></li>
-                    <li><a href="#step3">Step 3</a></li>
+                    <li><a href="#step1">About</a></li>
+                    <li><a href="#step2">Play</a></li>
+                    <li><a href="#step3">Subscribe</a></li>
                 </ul>
-                <a href="#" class="btn btn-info navbar-btn navbar-right">Download</a>
+                <a href="#" class="btn btn-info navbar-btn navbar-right">Big Blue Button that does nothing</a>
             </div>
         </div>
     </nav>
@@ -64,21 +64,21 @@
         <section>
             <div class="row">
                 <div class="col-lg-4">
-                    <h3 class="text-center">Step 1</h3>
+                    <h3 class="text-center">#Fact 1</h3>
                     <blockquote cite="http://">
                         <p>The Game of Shells (also known as “The Shell Game”, “Thimblerig”, and “Three Shells and a Pea”) involves a flat surface, a row of three small containers and a ball small enough to fit underneath each of them.</p>
                     </blockquote>
                 </div>
 
                 <div class="col-lg-4">
-                    <h3 class="text-center">Step 2</h3>
+                    <h3 class="text-center">#Fact 2</h3>
                     <blockquote cite="http://">
                         <p>On each turn of the game the player is shown the ball being placed under one of the containers before the order of the containers is repeatedly shuffled at random.</p>
                     </blockquote>
                 </div>
 
                 <div class="col-lg-4">
-                    <h3 class="text-center">Step 3</h3>
+                    <h3 class="text-center">#Fact 3</h3>
                     <blockquote cite="http://">
                         <p>The player then has to guess correctly which container the ball is under in order to win, otherwise they lose.</p>
                     </blockquote>
@@ -89,10 +89,16 @@
     <div class="container" id="step2">
         <div class="page-header text-center">
             <h1><strong>Playing</strong> the Game</h1>
+            <div id="instructions">
+                <p>1. Press the orange play button</p>
+                <p>2. The red ball will go into any of the square containers.</p>
+                <p>3. Click on any of the blue, square containers to guess where the ball went.</p>
+            </div>
             <button type="button" name="play" class="btn btn-warning btn-lg" onclick="play()"><span class="glyphicon glyphicon-play"></span> Play</button>
         </div>
-        <section>
-            <div class="row" id="game-container">
+        <!-- Centralized the game-container div, so that the elements inside(squares) will position themselves absolutely relative to the container -->
+        <section style="text-align:center;">
+            <div class="" id="game-container">
                 <div class="square one"></div>
                 <div class="square two"></div>
                 <div class="square three"></div>
@@ -103,7 +109,7 @@
     </div>
 
     <!-- Call to Action -->
-    <section>
+    <section id="step3">
         <div class="well">
             <div class="container text-center">
                 <h3>Wanna know more? Subscribe Now</h3>
@@ -166,10 +172,6 @@
             <!-- End Carousel Slide -->
 
         </section>
-    </div>
-    <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
